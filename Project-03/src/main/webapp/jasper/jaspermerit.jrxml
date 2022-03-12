@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.0.4.final using JasperReports Library version 6.0.4  -->
+<!-- 2022-03-11T15:06:51 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jaspermerit" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ffc05b9d-eba4-4e54-92a5-0292192197cf">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="mlist"/>
+	<queryString>
+		<![CDATA[SELECT *, (PHYSICS+CHEMISTRY+MATHS) AS TOTAL_MARKS FROM ST_MARKSHEET WHERE PHYSICS>40 AND CHEMISTRY>40 AND MATHS>40 ORDER BY TOTAL_MARKS DESC]]>
+	</queryString>
+	<field name="ID" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ROLLNO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="STUDENTID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NAME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PHYSICS" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CHEMISTRY" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MATHS" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CREATED_BY" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MODIFIED_BY" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CREATED_DATETIME" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MODIFIED_DATETIME" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ROLL_NO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="STUDENT_ID" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TOTAL_MARKS" class="java.lang.Long"/>
+	<group name="ID">
+		<groupExpression><![CDATA[$F{ID}]]></groupExpression>
+	</group>
+	<group name="ROLLNO">
+		<groupExpression><![CDATA[$F{ROLLNO}]]></groupExpression>
+	</group>
+	<group name="STUDENTID">
+		<groupExpression><![CDATA[$F{STUDENTID}]]></groupExpression>
+	</group>
+	<group name="NAME">
+		<groupExpression><![CDATA[$F{NAME}]]></groupExpression>
+	</group>
+	<group name="PHYSICS">
+		<groupExpression><![CDATA[$F{PHYSICS}]]></groupExpression>
+	</group>
+	<group name="CHEMISTRY">
+		<groupExpression><![CDATA[$F{CHEMISTRY}]]></groupExpression>
+	</group>
+	<group name="MATHS">
+		<groupExpression><![CDATA[$F{MATHS}]]></groupExpression>
+	</group>
+	<group name="CREATED_BY">
+		<groupExpression><![CDATA[$F{CREATED_BY}]]></groupExpression>
+	</group>
+	<group name="MODIFIED_BY">
+		<groupExpression><![CDATA[$F{MODIFIED_BY}]]></groupExpression>
+	</group>
+	<group name="CREATED_DATETIME">
+		<groupExpression><![CDATA[$F{CREATED_DATETIME}]]></groupExpression>
+	</group>
+	<group name="MODIFIED_DATETIME">
+		<groupExpression><![CDATA[$F{MODIFIED_DATETIME}]]></groupExpression>
+	</group>
+	<group name="ROLL_NO">
+		<groupExpression><![CDATA[$F{ROLL_NO}]]></groupExpression>
+	</group>
+	<group name="STUDENT_ID">
+		<groupExpression><![CDATA[$F{STUDENT_ID}]]></groupExpression>
+	</group>
+	<group name="TOTAL_MARKS">
+		<groupExpression><![CDATA[$F{TOTAL_MARKS}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="32" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="60" height="30" uuid="0877bb13-0676-4656-8565-51808d2d9d3b"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="0" width="101" height="30" uuid="6ba1c1eb-cdd3-48d0-8f74-f40b4372132a"/>
+				<text><![CDATA[ROLLNO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="90" height="30" uuid="51b1e08b-695c-4fb9-bc76-5bda44ec0f3b"/>
+				<text><![CDATA[STUDENTID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="0" width="89" height="30" uuid="0bb8334b-44b1-4160-80c0-b8a3683e139d"/>
+				<text><![CDATA[NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="69" height="30" uuid="d893b6e7-fb6b-4ad2-8efa-2b9ac668f3ff"/>
+				<text><![CDATA[PHYSICS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="0" width="69" height="30" uuid="214d2718-9aaf-4325-ab1b-f97fed5dbd15"/>
+				<text><![CDATA[CHEMISTRY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="69" height="30" uuid="c9aae4e0-74a4-4f21-bef9-e12d3d8563c5"/>
+				<text><![CDATA[MATHS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="486" y="0" width="84" height="30" uuid="3e2ad98a-ef29-4943-a997-854b3d26c909"/>
+				<text><![CDATA[TOTAL_MARKS]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="78" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="49" width="72" height="21" uuid="6055ae41-391e-4578-9c00-6456073e8a93"/>
+				<textFieldExpression><![CDATA[$F{ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="49" width="101" height="21" uuid="fb029f8d-b3d9-46c1-acd0-603e217910e1"/>
+				<textFieldExpression><![CDATA[$F{ROLLNO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="49" width="49" height="21" uuid="66fdca70-893d-4a8f-a8bf-49ba8b431e86"/>
+				<textFieldExpression><![CDATA[$F{STUDENTID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="49" width="89" height="21" uuid="0927058e-31cb-47cc-98ab-5d10463236da"/>
+				<textFieldExpression><![CDATA[$F{NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="49" width="69" height="21" uuid="4e4412e1-00f8-480d-8265-4a71e894fc92"/>
+				<textFieldExpression><![CDATA[$F{PHYSICS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="49" width="69" height="21" uuid="8d097b8f-15a3-4857-aa98-f9d569bfe100"/>
+				<textFieldExpression><![CDATA[$F{CHEMISTRY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="49" width="69" height="21" uuid="d75c65e2-9aaa-4216-8bb9-bed4954a71ed"/>
+				<textFieldExpression><![CDATA[$F{MATHS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="486" y="49" width="69" height="21" uuid="79283fdb-41f9-41a5-8339-7f84b0b6b1dc"/>
+				<textFieldExpression><![CDATA[$F{TOTAL_MARKS}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="137" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
